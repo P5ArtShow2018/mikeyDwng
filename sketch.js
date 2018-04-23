@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000,1000)
+  createCanvas(windowWidth,windowHeight)
   background (0,200,0)
   frameRate(60)
 }
@@ -21,4 +21,7 @@ function draw() {
 
 function mousePressed() {
   background(0,200,0)
+}
+function windowResized() {
+  resizeCanvas(widowWidth, windowHeight);
 }
